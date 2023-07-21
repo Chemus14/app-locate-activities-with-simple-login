@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="js/script.js" defer></script>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>Fit App <i class="fa-regular fa-watch-fitness"></i></p>
+      </div>
+    </header>
+    <main class="content">
+      <aside>
+        <div class="favs">
+          <h2>Favs Places</h2>
+          <div class="favs-box">
+            <!-- <button type="button" class="item-fav-box">
+              Home <i class="fa-solid fa-house"></i>
+            </button>
+            <button type="button" class="item-fav-box">
+              Work <i class="fa-solid fa-briefcase"></i>
+            </button>
+            <button type="button" class="item-fav-box">
+              Gym <i class="fa-solid fa-dumbbell"></i>
+            </button>
+            <button type="button" class="item-fav-box">
+              Pub <i class="fa-solid fa-champagne-glasses"></i>
+            </button>
+            <button type="button" class="item-fav-box">
+              Restaurant <i class="fa-solid fa-utensils"></i>
+            </button>
+            <button type="button" class="item-fav-box">
+              Library <i class="fa-solid fa-book"></i>
+            </button>-->
+          </div>
+          <button type="button" class="add-fav-box">
+            Add New Place <i class="fa-sharp fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="activities">
+          <h2>Activities</h2>
+          <div class="activities-box">
+            <!-- <div class="container-activity">
+              <p>
+                <i class="fa-solid fa-person-running"></i
+                ><span>25 kms in a 1 hour and 25 minutes</span>
+              </p>
+            </div>
+            <div class="container-activity">
+              <p>
+                <i class="fa-solid fa-person-walking"></i
+                ><span>25 kms in a 1 hour and 25 minutes</span>
+              </p>
+            </div>
+            <div class="container-activity">
+              <p>
+                <i class="fa-solid fa-person-swimming"></i
+                ><span>25 kms in a 1 hour and 25 minutes</span>
+              </p>
+            </div>
+            <div class="container-activity">
+              <p>
+                <i class="fa-solid fa-person-biking"></i
+                ><span>25 kms in a 1 hour and 25 minutes</span>
+              </p>
+            </div> -->
+          </div>
+          <button type="button" class="add-activities-box">
+            Add New Activity <i class="fa-sharp fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </aside>
+      <section class="map">
+        <div id="map"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="copy">Copyright</div>
+      <div class="social-media"></div>
+    </footer>
+  </body>
+</html>
